@@ -21,6 +21,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Rustup
+        run: rustup update
+
       - name: Test
         run: |
           cargo run
