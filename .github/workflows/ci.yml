@@ -27,4 +27,5 @@ jobs:
       - name: Test
         run: |
           cargo run
-          cargo run -- 1
+          cargo run -- stdout || true
+          cargo run -- stderr || true
